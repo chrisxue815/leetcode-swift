@@ -6,9 +6,14 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8321D92720337E24008829CD /* P506.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321D92620337E24008829CD /* P506.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8321D91E20337D7B008829CD /* leetcode-swift.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "leetcode-swift.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8321D92220337D7B008829CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8321D92620337E24008829CD /* P506.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P506.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +30,7 @@
 		8321D91F20337D7B008829CD /* leetcode-swift */ = {
 			isa = PBXGroup;
 			children = (
+				8321D92620337E24008829CD /* P506.swift */,
 				8321D92220337D7B008829CD /* Info.plist */,
 			);
 			path = "leetcode-swift";
@@ -78,6 +84,7 @@
 				TargetAttributes = {
 					8321D91D20337D7B008829CD = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -114,6 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8321D92720337E24008829CD /* P506.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,12 +131,14 @@
 		8321D92420337D7B008829CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "leetcode-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "chrisxue815.leetcode-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -136,6 +146,7 @@
 		8321D92520337D7B008829CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "leetcode-swift/Info.plist";
